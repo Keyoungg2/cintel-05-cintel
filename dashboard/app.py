@@ -146,7 +146,7 @@ with ui.sidebar(open="open"):
 
 with ui.layout_columns():
     with ui.value_box(
-        showcase=icon_svg("sun",),
+        showcase=icon_svg("table"),
         theme="text-orange",
         style ="blue"
     ):
@@ -159,7 +159,7 @@ with ui.layout_columns():
             deque_snapshot, df, latest_dictionary_entry = reactive_calc_combined()
             return f"{latest_dictionary_entry['temp']} C"
 
-        "warmer than usual"
+        "Get that grill a running. It's sunny with a side of Clouds"
 
   
 
@@ -234,4 +234,5 @@ with ui.card(style="background-color: blue; color: orange"):
             fig.update_layout(xaxis_title="Time",yaxis_title="Temperature (°C)")
 
         return fig
+
 
